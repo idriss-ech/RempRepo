@@ -1,0 +1,1304 @@
+2024-11-27T00:11:12.896+01:00  INFO 19238 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : Starting ProjetRembApplication using Java 21.0.2 with PID 19238 (/Users/idriss/Desktop/projetRemb/target/classes started by idriss in /Users/idriss/Desktop/projetRemb)
+2024-11-27T00:11:12.902+01:00  INFO 19238 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-11-27T00:11:13.148+01:00  INFO 19238 --- [projetRemb] [main] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 2 ms.
+2024-11-27T00:11:13.305+01:00  INFO 19238 --- [projetRemb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27T00:11:13.328+01:00  INFO 19238 --- [projetRemb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2024-11-27T00:11:13.625+01:00  INFO 19238 --- [projetRemb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-27T00:11:13.630+01:00  INFO 19238 --- [projetRemb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-27T00:11:13.630+01:00  INFO 19238 --- [projetRemb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27T00:11:13.649+01:00  INFO 19238 --- [projetRemb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-27T00:11:13.649+01:00  INFO 19238 --- [projetRemb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 723 ms
+2024-11-27T00:11:13.707+01:00  INFO 19238 --- [projetRemb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-27T00:11:13.797+01:00  INFO 19238 --- [projetRemb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-27T00:11:13.798+01:00  INFO 19238 --- [projetRemb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-27T00:11:13.803+01:00  INFO 19238 --- [projetRemb] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-27T00:11:13.921+01:00  INFO 19238 --- [projetRemb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27T00:11:13.946+01:00  INFO 19238 --- [projetRemb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-27T00:11:13.959+01:00  INFO 19238 --- [projetRemb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-27T00:11:14.069+01:00  INFO 19238 --- [projetRemb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27T00:11:14.103+01:00  INFO 19238 --- [projetRemb] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-27T00:11:14.516+01:00  INFO 19238 --- [projetRemb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27T00:11:14.530+01:00  INFO 19238 --- [projetRemb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27T00:11:14.550+01:00  INFO 19238 --- [projetRemb] [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2024-11-27T00:11:14.560+01:00  INFO 19238 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-27T00:11:14.716+01:00  INFO 19238 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing JSON Item Reader
+2024-11-27T00:11:14.719+01:00  INFO 19238 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing Composite Processor
+2024-11-27T00:11:14.721+01:00  INFO 19238 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing JPA Item Writer
+2024-11-27T00:11:14.743+01:00  INFO 19238 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing Job
+2024-11-27T00:11:14.789+01:00  WARN 19238 --- [projetRemb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27T00:11:15.124+01:00  INFO 19238 --- [projetRemb] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-11-27T00:11:15.143+01:00 DEBUG 19238 --- [projetRemb] [main] .s.JobRegistrySmartInitializingSingleton : Registering job: importDossierJob
+2024-11-27T00:11:15.165+01:00  INFO 19238 --- [projetRemb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-27T00:11:15.174+01:00  INFO 19238 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : Started ProjetRembApplication in 2.529 seconds (process running for 3.134)
+2024-11-27T00:11:15.191+01:00  INFO 19238 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=importDossierJob]] launched with the following parameters: [{}]
+2024-11-27T00:11:15.191+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Job execution starting: JobExecution: id=1, version=0, startTime=null, endTime=null, lastUpdated=2024-11-27T00:11:15.189411, status=STARTING, exitStatus=exitCode=UNKNOWN;exitDescription=, job=[JobInstance: id=1, version=0, Job=[importDossierJob]], jobParameters=[{}]
+2024-11-27T00:11:15.199+01:00  INFO 19238 --- [projetRemb] [main] .e.p.l.JobCompletionNotificationListener : Job started: importDossierJob
+2024-11-27T00:11:15.202+01:00  INFO 19238 --- [projetRemb] [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2024-11-27T00:11:15.202+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Executing: id=1
+2024-11-27T00:11:15.204+01:00  INFO 19238 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Step started: step1
+2024-11-27T00:11:15.211+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:11:15.211+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:11:15.211+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@25198ead
+2024-11-27T00:11:15.211+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:11:15.212+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:11:15.212+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:11:15.230+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=2
+2024-11-27T00:11:15.231+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=3
+2024-11-27T00:11:15.231+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=4
+2024-11-27T00:11:15.231+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=5
+2024-11-27T00:11:15.231+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=6
+2024-11-27T00:11:15.231+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=7
+2024-11-27T00:11:15.231+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=8
+2024-11-27T00:11:15.232+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=9
+2024-11-27T00:11:15.232+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=10
+2024-11-27T00:11:15.232+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:11:15.233+01:00  WARN 19238 --- [projetRemb] [main] c.e.p.processor.ValidationProcessor      : Nom de l'assuré est vide pour le dossier: com.example.projetremb.entity.Dossier@a19fe87
+2024-11-27T00:11:15.235+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=10, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2024-11-27T00:11:15.235+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Rollback for RuntimeException: org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+2024-11-27T00:11:15.236+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Handling exception: org.springframework.batch.item.validator.ValidationException, caused by: org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+2024-11-27T00:11:15.236+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.i.SimpleRetryExceptionHandler  : Handled non-fatal exception
+
+org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:19) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:11:15.238+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=2
+2024-11-27T00:11:15.238+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@25198ead
+2024-11-27T00:11:15.238+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:11:15.238+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Skipping after failed process
+
+org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:19) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:11:15.238+01:00  WARN 19238 --- [projetRemb] [main] c.e.p.processor.ValidationProcessor      : Montant total des frais invalide pour le dossier: com.example.projetremb.entity.Dossier@42a08547
+2024-11-27T00:11:15.239+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=1, exitStatus=EXECUTING]
+2024-11-27T00:11:15.239+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Rollback for RuntimeException: org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+2024-11-27T00:11:15.239+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Handling exception: org.springframework.batch.item.validator.ValidationException, caused by: org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+2024-11-27T00:11:15.239+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.i.SimpleRetryExceptionHandler  : Handled non-fatal exception
+
+org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:31) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:11:15.239+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=3
+2024-11-27T00:11:15.239+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@25198ead
+2024-11-27T00:11:15.239+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:11:15.239+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Skipping after failed process
+
+org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:31) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:11:15.309+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Attempting to write: [items=[com.example.projetremb.entity.Dossier@6e18bc2f, com.example.projetremb.entity.Dossier@511cc6fc, com.example.projetremb.entity.Dossier@35f79e6d, com.example.projetremb.entity.Dossier@eb7d4ba, com.example.projetremb.entity.Dossier@37846cc2, com.example.projetremb.entity.Dossier@78002333, com.example.projetremb.entity.Dossier@6d50b8c2, com.example.projetremb.entity.Dossier@94047a4], skips=[[exception=org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide, item=com.example.projetremb.entity.Dossier@a19fe87], [exception=org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide, item=com.example.projetremb.entity.Dossier@42a08547]]]
+2024-11-27T00:11:15.309+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : Writing to JPA with 8 items.
+2024-11-27T00:11:15.334+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : 8 entities merged.
+2024-11-27T00:11:15.334+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : 0 entities found in persistence context.
+2024-11-27T00:11:15.349+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.step.item.ChunkOrientedTasklet   : Inputs not busy, ended: false
+2024-11-27T00:11:15.349+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=8, filtered=0, readSkips=0, writeSkips=0, processSkips=1, exitStatus=EXECUTING]
+2024-11-27T00:11:15.349+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Saving step execution before commit: StepExecution: id=1, version=1, name=step1, status=STARTED, exitStatus=EXECUTING, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=1, rollbackCount=2, exitDescription=
+2024-11-27T00:11:15.351+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=4
+2024-11-27T00:11:15.351+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@25198ead
+2024-11-27T00:11:15.351+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:11:15.351+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:11:15.351+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:11:15.351+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:11:15.351+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.b.c.step.item.ChunkOrientedTasklet   : Inputs not busy, ended: true
+2024-11-27T00:11:15.351+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2024-11-27T00:11:15.352+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Saving step execution before commit: StepExecution: id=1, version=2, name=step1, status=STARTED, exitStatus=EXECUTING, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2, exitDescription=
+2024-11-27T00:11:15.352+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:11:15.352+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step execution success: id=1
+2024-11-27T00:11:15.354+01:00  INFO 19238 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 151ms
+2024-11-27T00:11:15.354+01:00  INFO 19238 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Step step1 completed with status: exitCode=COMPLETED;exitDescription=
+2024-11-27T00:11:15.354+01:00  INFO 19238 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Skipped 2 items
+2024-11-27T00:11:15.361+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step execution complete: StepExecution: id=1, version=4, name=step1, status=COMPLETED, exitStatus=COMPLETED, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2
+2024-11-27T00:11:15.362+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Upgrading JobExecution status: StepExecution: id=1, version=4, name=step1, status=COMPLETED, exitStatus=COMPLETED, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2, exitDescription=
+2024-11-27T00:11:15.362+01:00 DEBUG 19238 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Job execution complete: JobExecution: id=1, version=1, startTime=2024-11-27T00:11:15.196435, endTime=null, lastUpdated=2024-11-27T00:11:15.196578, status=COMPLETED, exitStatus=exitCode=COMPLETED;exitDescription=, job=[JobInstance: id=1, version=0, Job=[importDossierJob]], jobParameters=[{}]
+2024-11-27T00:11:15.362+01:00  INFO 19238 --- [projetRemb] [main] .e.p.l.JobCompletionNotificationListener : Job completed successfully
+2024-11-27T00:11:15.364+01:00  INFO 19238 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=importDossierJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 166ms
+2024-11-27T00:11:15.456+01:00  INFO 19238 --- [projetRemb] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27T00:11:15.456+01:00  INFO 19238 --- [projetRemb] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-27T00:11:15.457+01:00  INFO 19238 --- [projetRemb] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-27T00:11:52.622+01:00  INFO 19238 --- [projetRemb] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-27T00:11:52.627+01:00  INFO 19238 --- [projetRemb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-27T00:11:52.635+01:00 DEBUG 19238 --- [projetRemb] [SpringApplicationShutdownHook] .s.JobRegistrySmartInitializingSingleton : Unregistering job: importDossierJob
+2024-11-27T00:11:52.636+01:00  INFO 19238 --- [projetRemb] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27T00:11:52.644+01:00  INFO 19238 --- [projetRemb] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-27T00:11:52.649+01:00  INFO 19238 --- [projetRemb] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-27T00:11:55.019+01:00  INFO 19286 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : Starting ProjetRembApplication using Java 21.0.2 with PID 19286 (/Users/idriss/Desktop/projetRemb/target/classes started by idriss in /Users/idriss/Desktop/projetRemb)
+2024-11-27T00:11:55.020+01:00  INFO 19286 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-11-27T00:11:55.277+01:00  INFO 19286 --- [projetRemb] [main] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 3 ms.
+2024-11-27T00:11:55.435+01:00  INFO 19286 --- [projetRemb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27T00:11:55.458+01:00  INFO 19286 --- [projetRemb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2024-11-27T00:11:55.763+01:00  INFO 19286 --- [projetRemb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-27T00:11:55.769+01:00  INFO 19286 --- [projetRemb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-27T00:11:55.769+01:00  INFO 19286 --- [projetRemb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27T00:11:55.787+01:00  INFO 19286 --- [projetRemb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-27T00:11:55.788+01:00  INFO 19286 --- [projetRemb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 746 ms
+2024-11-27T00:11:55.844+01:00  INFO 19286 --- [projetRemb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-27T00:11:55.928+01:00  INFO 19286 --- [projetRemb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-27T00:11:55.929+01:00  INFO 19286 --- [projetRemb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-27T00:11:55.933+01:00  INFO 19286 --- [projetRemb] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-27T00:11:56.052+01:00  INFO 19286 --- [projetRemb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27T00:11:56.077+01:00  INFO 19286 --- [projetRemb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-27T00:11:56.090+01:00  INFO 19286 --- [projetRemb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-27T00:11:56.207+01:00  INFO 19286 --- [projetRemb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27T00:11:56.242+01:00  INFO 19286 --- [projetRemb] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-27T00:11:56.647+01:00  INFO 19286 --- [projetRemb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27T00:11:56.661+01:00  INFO 19286 --- [projetRemb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27T00:11:56.681+01:00  INFO 19286 --- [projetRemb] [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2024-11-27T00:11:56.691+01:00  INFO 19286 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-27T00:11:56.854+01:00  INFO 19286 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing JSON Item Reader
+2024-11-27T00:11:56.858+01:00  INFO 19286 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing Composite Processor
+2024-11-27T00:11:56.860+01:00  INFO 19286 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing JPA Item Writer
+2024-11-27T00:11:56.881+01:00  INFO 19286 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing Job
+2024-11-27T00:11:56.925+01:00  WARN 19286 --- [projetRemb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27T00:11:57.277+01:00  INFO 19286 --- [projetRemb] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-11-27T00:11:57.296+01:00 DEBUG 19286 --- [projetRemb] [main] .s.JobRegistrySmartInitializingSingleton : Registering job: importDossierJob
+2024-11-27T00:11:57.320+01:00  INFO 19286 --- [projetRemb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-27T00:11:57.328+01:00  INFO 19286 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : Started ProjetRembApplication in 2.5 seconds (process running for 2.78)
+2024-11-27T00:11:57.347+01:00  INFO 19286 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=importDossierJob]] launched with the following parameters: [{}]
+2024-11-27T00:11:57.347+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Job execution starting: JobExecution: id=1, version=0, startTime=null, endTime=null, lastUpdated=2024-11-27T00:11:57.345267, status=STARTING, exitStatus=exitCode=UNKNOWN;exitDescription=, job=[JobInstance: id=1, version=0, Job=[importDossierJob]], jobParameters=[{}]
+2024-11-27T00:11:57.355+01:00  INFO 19286 --- [projetRemb] [main] .e.p.l.JobCompletionNotificationListener : Job started: importDossierJob
+2024-11-27T00:11:57.358+01:00  INFO 19286 --- [projetRemb] [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2024-11-27T00:11:57.358+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Executing: id=1
+2024-11-27T00:11:57.360+01:00  INFO 19286 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Step started: step1
+2024-11-27T00:11:57.366+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:11:57.367+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:11:57.367+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@304e83a
+2024-11-27T00:11:57.367+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:11:57.368+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:11:57.368+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:11:57.385+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=2
+2024-11-27T00:11:57.385+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=3
+2024-11-27T00:11:57.385+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=4
+2024-11-27T00:11:57.385+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=5
+2024-11-27T00:11:57.386+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=6
+2024-11-27T00:11:57.386+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=7
+2024-11-27T00:11:57.386+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=8
+2024-11-27T00:11:57.386+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=9
+2024-11-27T00:11:57.386+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=10
+2024-11-27T00:11:57.386+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:11:57.387+01:00  WARN 19286 --- [projetRemb] [main] c.e.p.processor.ValidationProcessor      : Nom de l'assuré est vide pour le dossier: com.example.projetremb.entity.Dossier@4bb4adf7
+2024-11-27T00:11:57.389+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=10, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2024-11-27T00:11:57.389+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Rollback for RuntimeException: org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+2024-11-27T00:11:57.390+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Handling exception: org.springframework.batch.item.validator.ValidationException, caused by: org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+2024-11-27T00:11:57.390+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.i.SimpleRetryExceptionHandler  : Handled non-fatal exception
+
+org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:19) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:11:57.391+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=2
+2024-11-27T00:11:57.391+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@304e83a
+2024-11-27T00:11:57.391+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:11:57.392+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Skipping after failed process
+
+org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:19) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:11:57.392+01:00  WARN 19286 --- [projetRemb] [main] c.e.p.processor.ValidationProcessor      : Montant total des frais invalide pour le dossier: com.example.projetremb.entity.Dossier@5967492a
+2024-11-27T00:11:57.392+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=1, exitStatus=EXECUTING]
+2024-11-27T00:11:57.392+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Rollback for RuntimeException: org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+2024-11-27T00:11:57.392+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Handling exception: org.springframework.batch.item.validator.ValidationException, caused by: org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+2024-11-27T00:11:57.392+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.i.SimpleRetryExceptionHandler  : Handled non-fatal exception
+
+org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:31) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:11:57.393+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=3
+2024-11-27T00:11:57.393+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@304e83a
+2024-11-27T00:11:57.393+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:11:57.393+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Skipping after failed process
+
+org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:31) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:11:57.452+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Attempting to write: [items=[com.example.projetremb.entity.Dossier@456d3914, com.example.projetremb.entity.Dossier@296c0293, com.example.projetremb.entity.Dossier@ad7cc49, com.example.projetremb.entity.Dossier@ae5eeee, com.example.projetremb.entity.Dossier@69b2ed81, com.example.projetremb.entity.Dossier@3bca3dee, com.example.projetremb.entity.Dossier@18ab86a2, com.example.projetremb.entity.Dossier@1b3ba1e3], skips=[[exception=org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide, item=com.example.projetremb.entity.Dossier@4bb4adf7], [exception=org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide, item=com.example.projetremb.entity.Dossier@5967492a]]]
+2024-11-27T00:11:57.453+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : Writing to JPA with 8 items.
+2024-11-27T00:11:57.476+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : 8 entities merged.
+2024-11-27T00:11:57.476+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : 0 entities found in persistence context.
+2024-11-27T00:11:57.489+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.step.item.ChunkOrientedTasklet   : Inputs not busy, ended: false
+2024-11-27T00:11:57.489+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=8, filtered=0, readSkips=0, writeSkips=0, processSkips=1, exitStatus=EXECUTING]
+2024-11-27T00:11:57.489+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Saving step execution before commit: StepExecution: id=1, version=1, name=step1, status=STARTED, exitStatus=EXECUTING, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=1, rollbackCount=2, exitDescription=
+2024-11-27T00:11:57.490+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=4
+2024-11-27T00:11:57.490+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@304e83a
+2024-11-27T00:11:57.490+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:11:57.490+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:11:57.491+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:11:57.491+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:11:57.491+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.b.c.step.item.ChunkOrientedTasklet   : Inputs not busy, ended: true
+2024-11-27T00:11:57.491+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2024-11-27T00:11:57.491+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Saving step execution before commit: StepExecution: id=1, version=2, name=step1, status=STARTED, exitStatus=EXECUTING, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2, exitDescription=
+2024-11-27T00:11:57.491+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:11:57.491+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step execution success: id=1
+2024-11-27T00:11:57.493+01:00  INFO 19286 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 134ms
+2024-11-27T00:11:57.493+01:00  INFO 19286 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Step step1 completed with status: exitCode=COMPLETED;exitDescription=
+2024-11-27T00:11:57.493+01:00  INFO 19286 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Skipped 2 items
+2024-11-27T00:11:57.500+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step execution complete: StepExecution: id=1, version=4, name=step1, status=COMPLETED, exitStatus=COMPLETED, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2
+2024-11-27T00:11:57.501+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Upgrading JobExecution status: StepExecution: id=1, version=4, name=step1, status=COMPLETED, exitStatus=COMPLETED, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2, exitDescription=
+2024-11-27T00:11:57.501+01:00 DEBUG 19286 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Job execution complete: JobExecution: id=1, version=1, startTime=2024-11-27T00:11:57.352539, endTime=null, lastUpdated=2024-11-27T00:11:57.352719, status=COMPLETED, exitStatus=exitCode=COMPLETED;exitDescription=, job=[JobInstance: id=1, version=0, Job=[importDossierJob]], jobParameters=[{}]
+2024-11-27T00:11:57.501+01:00  INFO 19286 --- [projetRemb] [main] .e.p.l.JobCompletionNotificationListener : Job completed successfully
+2024-11-27T00:11:57.503+01:00  INFO 19286 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=importDossierJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 149ms
+2024-11-27T00:11:57.760+01:00  INFO 19286 --- [projetRemb] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27T00:11:57.760+01:00  INFO 19286 --- [projetRemb] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-27T00:11:57.762+01:00  INFO 19286 --- [projetRemb] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-27T00:15:26.795+01:00  INFO 19286 --- [projetRemb] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-27T00:15:26.804+01:00  INFO 19286 --- [projetRemb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-27T00:15:26.810+01:00 DEBUG 19286 --- [projetRemb] [SpringApplicationShutdownHook] .s.JobRegistrySmartInitializingSingleton : Unregistering job: importDossierJob
+2024-11-27T00:15:26.811+01:00  INFO 19286 --- [projetRemb] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27T00:15:26.823+01:00  INFO 19286 --- [projetRemb] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-27T00:15:26.826+01:00  INFO 19286 --- [projetRemb] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-27T00:15:28.960+01:00  INFO 19391 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : Starting ProjetRembApplication using Java 21.0.2 with PID 19391 (/Users/idriss/Desktop/projetRemb/target/classes started by idriss in /Users/idriss/Desktop/projetRemb)
+2024-11-27T00:15:28.961+01:00  INFO 19391 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-11-27T00:15:29.224+01:00  INFO 19391 --- [projetRemb] [main] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 2 ms.
+2024-11-27T00:15:29.382+01:00  INFO 19391 --- [projetRemb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27T00:15:29.407+01:00  INFO 19391 --- [projetRemb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2024-11-27T00:15:29.709+01:00  INFO 19391 --- [projetRemb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-27T00:15:29.715+01:00  INFO 19391 --- [projetRemb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-27T00:15:29.715+01:00  INFO 19391 --- [projetRemb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27T00:15:29.739+01:00  INFO 19391 --- [projetRemb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-27T00:15:29.740+01:00  INFO 19391 --- [projetRemb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 755 ms
+2024-11-27T00:15:29.791+01:00  INFO 19391 --- [projetRemb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-27T00:15:29.885+01:00  INFO 19391 --- [projetRemb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-27T00:15:29.886+01:00  INFO 19391 --- [projetRemb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-27T00:15:29.890+01:00  INFO 19391 --- [projetRemb] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-27T00:15:30.012+01:00  INFO 19391 --- [projetRemb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27T00:15:30.042+01:00  INFO 19391 --- [projetRemb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-27T00:15:30.057+01:00  INFO 19391 --- [projetRemb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-27T00:15:30.184+01:00  INFO 19391 --- [projetRemb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27T00:15:30.223+01:00  INFO 19391 --- [projetRemb] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-27T00:15:30.653+01:00  INFO 19391 --- [projetRemb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27T00:15:30.667+01:00  INFO 19391 --- [projetRemb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27T00:15:30.686+01:00  INFO 19391 --- [projetRemb] [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2024-11-27T00:15:30.697+01:00  INFO 19391 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-27T00:15:30.855+01:00  INFO 19391 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing JSON Item Reader
+2024-11-27T00:15:30.858+01:00  INFO 19391 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing Composite Processor
+2024-11-27T00:15:30.860+01:00  INFO 19391 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing JPA Item Writer
+2024-11-27T00:15:30.882+01:00  INFO 19391 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing Job
+2024-11-27T00:15:30.926+01:00  WARN 19391 --- [projetRemb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27T00:15:31.279+01:00  INFO 19391 --- [projetRemb] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-11-27T00:15:31.297+01:00 DEBUG 19391 --- [projetRemb] [main] .s.JobRegistrySmartInitializingSingleton : Registering job: importDossierJob
+2024-11-27T00:15:31.321+01:00  INFO 19391 --- [projetRemb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-27T00:15:31.330+01:00  INFO 19391 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : Started ProjetRembApplication in 2.589 seconds (process running for 2.89)
+2024-11-27T00:15:31.349+01:00  INFO 19391 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=importDossierJob]] launched with the following parameters: [{}]
+2024-11-27T00:15:31.350+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Job execution starting: JobExecution: id=1, version=0, startTime=null, endTime=null, lastUpdated=2024-11-27T00:15:31.347606, status=STARTING, exitStatus=exitCode=UNKNOWN;exitDescription=, job=[JobInstance: id=1, version=0, Job=[importDossierJob]], jobParameters=[{}]
+2024-11-27T00:15:31.359+01:00  INFO 19391 --- [projetRemb] [main] .e.p.l.JobCompletionNotificationListener : Job started: importDossierJob
+2024-11-27T00:15:31.361+01:00  INFO 19391 --- [projetRemb] [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2024-11-27T00:15:31.361+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Executing: id=1
+2024-11-27T00:15:31.363+01:00  INFO 19391 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Step started: step1
+2024-11-27T00:15:31.370+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:15:31.370+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:15:31.370+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@37e99c0f
+2024-11-27T00:15:31.370+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:15:31.371+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:15:31.371+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:15:31.389+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=2
+2024-11-27T00:15:31.390+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=3
+2024-11-27T00:15:31.390+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=4
+2024-11-27T00:15:31.390+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=5
+2024-11-27T00:15:31.390+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=6
+2024-11-27T00:15:31.390+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=7
+2024-11-27T00:15:31.391+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=8
+2024-11-27T00:15:31.391+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=9
+2024-11-27T00:15:31.391+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=10
+2024-11-27T00:15:31.391+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:15:31.392+01:00  WARN 19391 --- [projetRemb] [main] c.e.p.processor.ValidationProcessor      : Nom de l'assuré est vide pour le dossier: com.example.projetremb.entity.Dossier@4c53ce60
+2024-11-27T00:15:31.394+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=10, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2024-11-27T00:15:31.394+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Rollback for RuntimeException: org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+2024-11-27T00:15:31.394+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Handling exception: org.springframework.batch.item.validator.ValidationException, caused by: org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+2024-11-27T00:15:31.395+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.i.SimpleRetryExceptionHandler  : Handled non-fatal exception
+
+org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:19) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:15:31.396+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=2
+2024-11-27T00:15:31.396+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@37e99c0f
+2024-11-27T00:15:31.396+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:15:31.397+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Skipping after failed process
+
+org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:19) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:15:31.397+01:00  WARN 19391 --- [projetRemb] [main] c.e.p.processor.ValidationProcessor      : Montant total des frais invalide pour le dossier: com.example.projetremb.entity.Dossier@783a2fec
+2024-11-27T00:15:31.397+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=1, exitStatus=EXECUTING]
+2024-11-27T00:15:31.397+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Rollback for RuntimeException: org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+2024-11-27T00:15:31.397+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Handling exception: org.springframework.batch.item.validator.ValidationException, caused by: org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+2024-11-27T00:15:31.397+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.i.SimpleRetryExceptionHandler  : Handled non-fatal exception
+
+org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:31) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:15:31.398+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=3
+2024-11-27T00:15:31.398+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@37e99c0f
+2024-11-27T00:15:31.398+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:15:31.398+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Skipping after failed process
+
+org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:31) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:15:31.462+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Attempting to write: [items=[com.example.projetremb.entity.Dossier@6b989889, com.example.projetremb.entity.Dossier@319e02e7, com.example.projetremb.entity.Dossier@3566d527, com.example.projetremb.entity.Dossier@37eca4c0, com.example.projetremb.entity.Dossier@67744663, com.example.projetremb.entity.Dossier@399e43d0, com.example.projetremb.entity.Dossier@2bfe2327, com.example.projetremb.entity.Dossier@24a024c8], skips=[[exception=org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide, item=com.example.projetremb.entity.Dossier@4c53ce60], [exception=org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide, item=com.example.projetremb.entity.Dossier@783a2fec]]]
+2024-11-27T00:15:31.462+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : Writing to JPA with 8 items.
+2024-11-27T00:15:31.483+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : 8 entities merged.
+2024-11-27T00:15:31.483+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : 0 entities found in persistence context.
+2024-11-27T00:15:31.498+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.step.item.ChunkOrientedTasklet   : Inputs not busy, ended: false
+2024-11-27T00:15:31.498+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=8, filtered=0, readSkips=0, writeSkips=0, processSkips=1, exitStatus=EXECUTING]
+2024-11-27T00:15:31.498+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Saving step execution before commit: StepExecution: id=1, version=1, name=step1, status=STARTED, exitStatus=EXECUTING, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=1, rollbackCount=2, exitDescription=
+2024-11-27T00:15:31.499+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=4
+2024-11-27T00:15:31.499+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@37e99c0f
+2024-11-27T00:15:31.499+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:15:31.500+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:15:31.500+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:15:31.500+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:15:31.500+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.b.c.step.item.ChunkOrientedTasklet   : Inputs not busy, ended: true
+2024-11-27T00:15:31.500+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2024-11-27T00:15:31.500+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Saving step execution before commit: StepExecution: id=1, version=2, name=step1, status=STARTED, exitStatus=EXECUTING, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2, exitDescription=
+2024-11-27T00:15:31.501+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:15:31.501+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step execution success: id=1
+2024-11-27T00:15:31.502+01:00  INFO 19391 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 140ms
+2024-11-27T00:15:31.502+01:00  INFO 19391 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Step step1 completed with status: exitCode=COMPLETED;exitDescription=
+2024-11-27T00:15:31.502+01:00  INFO 19391 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Skipped 2 items
+2024-11-27T00:15:31.510+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step execution complete: StepExecution: id=1, version=4, name=step1, status=COMPLETED, exitStatus=COMPLETED, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2
+2024-11-27T00:15:31.511+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Upgrading JobExecution status: StepExecution: id=1, version=4, name=step1, status=COMPLETED, exitStatus=COMPLETED, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2, exitDescription=
+2024-11-27T00:15:31.511+01:00 DEBUG 19391 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Job execution complete: JobExecution: id=1, version=1, startTime=2024-11-27T00:15:31.355830, endTime=null, lastUpdated=2024-11-27T00:15:31.355992, status=COMPLETED, exitStatus=exitCode=COMPLETED;exitDescription=, job=[JobInstance: id=1, version=0, Job=[importDossierJob]], jobParameters=[{}]
+2024-11-27T00:15:31.512+01:00  INFO 19391 --- [projetRemb] [main] .e.p.l.JobCompletionNotificationListener : Job completed successfully
+2024-11-27T00:15:31.513+01:00  INFO 19391 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=importDossierJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 156ms
+2024-11-27T00:15:31.636+01:00  INFO 19391 --- [projetRemb] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27T00:15:31.636+01:00  INFO 19391 --- [projetRemb] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-27T00:15:31.637+01:00  INFO 19391 --- [projetRemb] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-27T00:20:02.336+01:00  INFO 19391 --- [projetRemb] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-27T00:20:02.344+01:00  INFO 19391 --- [projetRemb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-27T00:20:02.350+01:00 DEBUG 19391 --- [projetRemb] [SpringApplicationShutdownHook] .s.JobRegistrySmartInitializingSingleton : Unregistering job: importDossierJob
+2024-11-27T00:20:02.351+01:00  INFO 19391 --- [projetRemb] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27T00:20:02.361+01:00  INFO 19391 --- [projetRemb] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-27T00:20:02.363+01:00  INFO 19391 --- [projetRemb] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-27T00:20:04.639+01:00  INFO 19547 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : Starting ProjetRembApplication using Java 21.0.2 with PID 19547 (/Users/idriss/Desktop/projetRemb/target/classes started by idriss in /Users/idriss/Desktop/projetRemb)
+2024-11-27T00:20:04.641+01:00  INFO 19547 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-11-27T00:20:04.916+01:00  INFO 19547 --- [projetRemb] [main] o.s.b.c.c.annotation.BatchRegistrar      : Finished Spring Batch infrastructure beans configuration in 2 ms.
+2024-11-27T00:20:05.077+01:00  INFO 19547 --- [projetRemb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27T00:20:05.103+01:00  INFO 19547 --- [projetRemb] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2024-11-27T00:20:05.410+01:00  INFO 19547 --- [projetRemb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-27T00:20:05.417+01:00  INFO 19547 --- [projetRemb] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-27T00:20:05.417+01:00  INFO 19547 --- [projetRemb] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27T00:20:05.437+01:00  INFO 19547 --- [projetRemb] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-27T00:20:05.437+01:00  INFO 19547 --- [projetRemb] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2024-11-27T00:20:05.500+01:00  INFO 19547 --- [projetRemb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-27T00:20:05.594+01:00  INFO 19547 --- [projetRemb] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-27T00:20:05.595+01:00  INFO 19547 --- [projetRemb] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-27T00:20:05.600+01:00  INFO 19547 --- [projetRemb] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-11-27T00:20:05.725+01:00  INFO 19547 --- [projetRemb] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27T00:20:05.755+01:00  INFO 19547 --- [projetRemb] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-11-27T00:20:05.769+01:00  INFO 19547 --- [projetRemb] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-27T00:20:05.898+01:00  INFO 19547 --- [projetRemb] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27T00:20:05.936+01:00  INFO 19547 --- [projetRemb] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-11-27T00:20:06.359+01:00  INFO 19547 --- [projetRemb] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27T00:20:06.373+01:00  INFO 19547 --- [projetRemb] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27T00:20:06.394+01:00  INFO 19547 --- [projetRemb] [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: H2
+2024-11-27T00:20:06.405+01:00  INFO 19547 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2024-11-27T00:20:06.566+01:00  INFO 19547 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing JSON Item Reader
+2024-11-27T00:20:06.569+01:00  INFO 19547 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing Composite Processor
+2024-11-27T00:20:06.571+01:00  INFO 19547 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing JPA Item Writer
+2024-11-27T00:20:06.592+01:00  INFO 19547 --- [projetRemb] [main] c.e.p.config.BatchConfiguration          : Initializing Job
+2024-11-27T00:20:06.637+01:00  WARN 19547 --- [projetRemb] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27T00:20:06.980+01:00  INFO 19547 --- [projetRemb] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2024-11-27T00:20:06.999+01:00 DEBUG 19547 --- [projetRemb] [main] .s.JobRegistrySmartInitializingSingleton : Registering job: importDossierJob
+2024-11-27T00:20:07.024+01:00  INFO 19547 --- [projetRemb] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-11-27T00:20:07.032+01:00  INFO 19547 --- [projetRemb] [main] c.e.projetremb.ProjetRembApplication     : Started ProjetRembApplication in 2.598 seconds (process running for 2.933)
+2024-11-27T00:20:07.051+01:00  INFO 19547 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=importDossierJob]] launched with the following parameters: [{}]
+2024-11-27T00:20:07.051+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Job execution starting: JobExecution: id=1, version=0, startTime=null, endTime=null, lastUpdated=2024-11-27T00:20:07.049355, status=STARTING, exitStatus=exitCode=UNKNOWN;exitDescription=, job=[JobInstance: id=1, version=0, Job=[importDossierJob]], jobParameters=[{}]
+2024-11-27T00:20:07.060+01:00  INFO 19547 --- [projetRemb] [main] .e.p.l.JobCompletionNotificationListener : Job started: importDossierJob
+2024-11-27T00:20:07.063+01:00  INFO 19547 --- [projetRemb] [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2024-11-27T00:20:07.063+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Executing: id=1
+2024-11-27T00:20:07.064+01:00  INFO 19547 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Step started: step1
+2024-11-27T00:20:07.071+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:20:07.071+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:20:07.071+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@55154761
+2024-11-27T00:20:07.071+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:20:07.072+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:20:07.072+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:20:07.090+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=2
+2024-11-27T00:20:07.091+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=3
+2024-11-27T00:20:07.091+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=4
+2024-11-27T00:20:07.091+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=5
+2024-11-27T00:20:07.091+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=6
+2024-11-27T00:20:07.091+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=7
+2024-11-27T00:20:07.091+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=8
+2024-11-27T00:20:07.092+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=9
+2024-11-27T00:20:07.092+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=10
+2024-11-27T00:20:07.092+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:20:07.093+01:00  WARN 19547 --- [projetRemb] [main] c.e.p.processor.ValidationProcessor      : Nom de l'assuré est vide pour le dossier: com.example.projetremb.entity.Dossier@6bcf2780
+2024-11-27T00:20:07.095+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=10, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2024-11-27T00:20:07.095+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Rollback for RuntimeException: org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+2024-11-27T00:20:07.095+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Handling exception: org.springframework.batch.item.validator.ValidationException, caused by: org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+2024-11-27T00:20:07.095+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.i.SimpleRetryExceptionHandler  : Handled non-fatal exception
+
+org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:19) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:20:07.097+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=2
+2024-11-27T00:20:07.097+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@55154761
+2024-11-27T00:20:07.097+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:20:07.097+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Skipping after failed process
+
+org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:19) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:20:07.097+01:00  WARN 19547 --- [projetRemb] [main] c.e.p.processor.ValidationProcessor      : Montant total des frais invalide pour le dossier: com.example.projetremb.entity.Dossier@1847da64
+2024-11-27T00:20:07.098+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=1, exitStatus=EXECUTING]
+2024-11-27T00:20:07.098+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Rollback for RuntimeException: org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+2024-11-27T00:20:07.098+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Handling exception: org.springframework.batch.item.validator.ValidationException, caused by: org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+2024-11-27T00:20:07.098+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.i.SimpleRetryExceptionHandler  : Handled non-fatal exception
+
+org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:31) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:20:07.098+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=3
+2024-11-27T00:20:07.098+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@55154761
+2024-11-27T00:20:07.098+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:20:07.098+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Skipping after failed process
+
+org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:31) ~[classes/:na]
+	at com.example.projetremb.processor.ValidationProcessor.process(ValidationProcessor.java:10) ~[classes/:na]
+	at org.springframework.batch.item.support.CompositeItemProcessor.processItem(CompositeItemProcessor.java:91) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.item.support.CompositeItemProcessor.process(CompositeItemProcessor.java:78) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doProcess(SimpleChunkProcessor.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.lambda$transform$0(FaultTolerantChunkProcessor.java:228) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:276) ~[spring-retry-2.0.10.jar:na]
+	at org.springframework.batch.core.step.item.BatchRetryTemplate.execute(BatchRetryTemplate.java:216) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.FaultTolerantChunkProcessor.transform(FaultTolerantChunkProcessor.java:291) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:220) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:383) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:250) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140) ~[spring-batch-infrastructure-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:235) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:230) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:408) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:127) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:307) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher$1.run(TaskExecutorJobLauncher.java:155) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:146) ~[spring-batch-core-5.2.0.jar:5.2.0]
+	at com.example.projetremb.ProjetRembApplication.run(ProjetRembApplication.java:29) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.0.jar:3.4.0]
+	at com.example.projetremb.ProjetRembApplication.main(ProjetRembApplication.java:24) ~[classes/:na]
+
+2024-11-27T00:20:07.161+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.i.FaultTolerantChunkProcessor  : Attempting to write: [items=[com.example.projetremb.entity.Dossier@635f4be1, com.example.projetremb.entity.Dossier@53fd061d, com.example.projetremb.entity.Dossier@699794d, com.example.projetremb.entity.Dossier@69959ea5, com.example.projetremb.entity.Dossier@2dba6013, com.example.projetremb.entity.Dossier@4d37a4d7, com.example.projetremb.entity.Dossier@257de910, com.example.projetremb.entity.Dossier@5cbf423b], skips=[[exception=org.springframework.batch.item.validator.ValidationException: Nom de l'assuré vide, item=com.example.projetremb.entity.Dossier@6bcf2780], [exception=org.springframework.batch.item.validator.ValidationException: Montant total des frais invalide, item=com.example.projetremb.entity.Dossier@1847da64]]]
+2024-11-27T00:20:07.161+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : Writing to JPA with 8 items.
+2024-11-27T00:20:07.181+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : 8 entities merged.
+2024-11-27T00:20:07.181+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.item.database.JpaItemWriter    : 0 entities found in persistence context.
+2024-11-27T00:20:07.200+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.step.item.ChunkOrientedTasklet   : Inputs not busy, ended: false
+2024-11-27T00:20:07.201+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=8, filtered=0, readSkips=0, writeSkips=0, processSkips=1, exitStatus=EXECUTING]
+2024-11-27T00:20:07.201+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Saving step execution before commit: StepExecution: id=1, version=1, name=step1, status=STARTED, exitStatus=EXECUTING, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=1, rollbackCount=2, exitDescription=
+2024-11-27T00:20:07.202+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=4
+2024-11-27T00:20:07.202+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@55154761
+2024-11-27T00:20:07.202+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.s.c.StepContextRepeatCallback    : Chunk execution starting: queue size=0
+2024-11-27T00:20:07.202+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Starting repeat context.
+2024-11-27T00:20:07.202+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat operation about to start at count=1
+2024-11-27T00:20:07.202+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:20:07.203+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.b.c.step.item.ChunkOrientedTasklet   : Inputs not busy, ended: true
+2024-11-27T00:20:07.203+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2024-11-27T00:20:07.203+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.tasklet.TaskletStep  : Saving step execution before commit: StepExecution: id=1, version=2, name=step1, status=STARTED, exitStatus=EXECUTING, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2, exitDescription=
+2024-11-27T00:20:07.204+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.repeat.support.RepeatTemplate  : Repeat is complete according to policy and result value.
+2024-11-27T00:20:07.204+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step execution success: id=1
+2024-11-27T00:20:07.205+01:00  INFO 19547 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 142ms
+2024-11-27T00:20:07.205+01:00  INFO 19547 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Step step1 completed with status: exitCode=COMPLETED;exitDescription=
+2024-11-27T00:20:07.206+01:00  INFO 19547 --- [projetRemb] [main] e.p.l.StepCompletionNotificationListener : Skipped 2 items
+2024-11-27T00:20:07.212+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.step.AbstractStep         : Step execution complete: StepExecution: id=1, version=4, name=step1, status=COMPLETED, exitStatus=COMPLETED, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2
+2024-11-27T00:20:07.213+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Upgrading JobExecution status: StepExecution: id=1, version=4, name=step1, status=COMPLETED, exitStatus=COMPLETED, readCount=10, filterCount=0, writeCount=8 readSkipCount=0, writeSkipCount=0, processSkipCount=2, commitCount=2, rollbackCount=2, exitDescription=
+2024-11-27T00:20:07.213+01:00 DEBUG 19547 --- [projetRemb] [main] o.s.batch.core.job.AbstractJob           : Job execution complete: JobExecution: id=1, version=1, startTime=2024-11-27T00:20:07.057015, endTime=null, lastUpdated=2024-11-27T00:20:07.057167, status=COMPLETED, exitStatus=exitCode=COMPLETED;exitDescription=, job=[JobInstance: id=1, version=0, Job=[importDossierJob]], jobParameters=[{}]
+2024-11-27T00:20:07.213+01:00  INFO 19547 --- [projetRemb] [main] .e.p.l.JobCompletionNotificationListener : Job completed successfully
+2024-11-27T00:20:07.215+01:00  INFO 19547 --- [projetRemb] [main] o.s.b.c.l.s.TaskExecutorJobLauncher      : Job: [SimpleJob: [name=importDossierJob]] completed with the following parameters: [{}] and the following status: [COMPLETED] in 156ms
+2024-11-27T00:20:07.303+01:00  INFO 19547 --- [projetRemb] [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27T00:20:07.304+01:00  INFO 19547 --- [projetRemb] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-27T00:20:07.304+01:00  INFO 19547 --- [projetRemb] [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-27T00:22:02.393+01:00  INFO 19547 --- [projetRemb] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-11-27T00:22:02.401+01:00  INFO 19547 --- [projetRemb] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-11-27T00:22:02.405+01:00 DEBUG 19547 --- [projetRemb] [SpringApplicationShutdownHook] .s.JobRegistrySmartInitializingSingleton : Unregistering job: importDossierJob
+2024-11-27T00:22:02.406+01:00  INFO 19547 --- [projetRemb] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27T00:22:02.414+01:00  INFO 19547 --- [projetRemb] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-27T00:22:02.416+01:00  INFO 19547 --- [projetRemb] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,251 @@
+[
+  {
+    "nomAssure": "",
+    "numeroAffiliation": "AFF6543209",
+    "immatriculation": "IMM098765",
+    "lienParente": "fils",
+    "montantTotalFrais": 150.0,
+    "prixConsultation": 50.0,
+    "nombrePiecesJointes": 3,
+    "nomBeneficiaire": "Omar",
+    "dateDepotDossier": "2024-11-10",
+    "traitements": [
+      {
+        "codeBarre": "6118001230068",
+        "existe": true,
+        "nomMedicament": "EAU POUR PREPARATION INJECTABLE",
+        "typeMedicament": "Solution pour Irrigation",
+        "prixMedicament": 95.00
+      },
+      {
+        "codeBarre": "6118010116230",
+        "existe": true,
+        "nomMedicament": "OXALIPLATINE",
+        "typeMedicament": "Solution A DILUER POUR PERFUSION",
+        "prixMedicament": 2882.00
+      }
+    ]
+  },
+  {
+    "nomAssure": "Farouk",
+    "numeroAffiliation": "AFF654321",
+    "immatriculation": "IMM123098",
+    "lienParente": "épouse",
+    "montantTotalFrais": -200.0,
+    "prixConsultation": 60.0,
+    "nombrePiecesJointes": 2,
+    "nomBeneficiaire": "Samira",
+    "dateDepotDossier": "2024-11-11",
+    "traitements": [
+      {
+        "codeBarre": "6118001182459",
+        "existe": true,
+        "nomMedicament": "VIVALAN",
+        "typeMedicament": "Comprimé Pellicule",
+        "prixMedicament": 60.70
+      },
+      {
+        "codeBarre": "6118000120155",
+        "existe": true,
+        "nomMedicament": "ZADRYL",
+        "typeMedicament": "Solution Buvable",
+        "prixMedicament": 31.90
+      }
+    ]
+  },
+  {
+    "nomAssure": "Khalid",
+    "numeroAffiliation": "AFF789123",
+    "immatriculation": "IMM456789",
+    "lienParente": "père",
+    "montantTotalFrais": 250.0,
+    "prixConsultation": 70.0,
+    "nombrePiecesJointes": 4,
+    "nomBeneficiaire": "Rachid",
+    "dateDepotDossier": "2024-11-12",
+    "traitements": [
+      {
+        "codeBarre": "6118000241256",
+        "existe": true,
+        "nomMedicament": "MYNAZOL",
+        "typeMedicament": "Gélule",
+        "prixMedicament": 87.00
+      },
+      {
+        "codeBarre": "6118000091974",
+        "existe": true,
+        "nomMedicament": "ALFACEFAL 125 MG/5 ML",
+        "typeMedicament": "Poudre pour Suspension Buvable",
+        "prixMedicament": 45.00
+      }
+    ]
+  },
+  {
+    "nomAssure": "Sofia",
+    "numeroAffiliation": "AFF234567",
+    "immatriculation": "IMM567890",
+    "lienParente": "mère",
+    "montantTotalFrais": 180.0,
+    "prixConsultation": 55.0,
+    "nombrePiecesJointes": 3,
+    "nomBeneficiaire": "Mouna",
+    "dateDepotDossier": "2024-11-13",
+    "traitements": [
+      {
+        "codeBarre": "6118000041344",
+        "existe": true,
+        "nomMedicament": "NOCAND 50 MG",
+        "typeMedicament": "Gélule",
+        "prixMedicament": 35.00
+      },
+      {
+        "codeBarre": "6118000100270",
+        "existe": true,
+        "nomMedicament": "MEDIATOR",
+        "typeMedicament": "Comprimé Enrobé",
+        "prixMedicament": 60.00
+      }
+    ]
+  },
+  {
+    "nomAssure": "Rania",
+    "numeroAffiliation": "AFF345678",
+    "immatriculation": "IMM678901",
+    "lienParente": "soeur",
+    "montantTotalFrais": 220.0,
+    "prixConsultation": 65.0,
+    "nombrePiecesJointes": 2,
+    "nomBeneficiaire": "Leila",
+    "dateDepotDossier": "2024-11-14",
+    "traitements": [
+      {
+        "codeBarre": "6118001182459",
+        "existe": true,
+        "nomMedicament": "VIVALAN",
+        "typeMedicament": "Comprimé Pellicule",
+        "prixMedicament": 60.70
+      }
+    ]
+  },
+  {
+    "nomAssure": "Yassir",
+    "numeroAffiliation": "AFF456789",
+    "immatriculation": "IMM789012",
+    "lienParente": "frère",
+    "montantTotalFrais": 300.0,
+    "prixConsultation": 80.0,
+    "nombrePiecesJointes": 5,
+    "nomBeneficiaire": "Hassan",
+    "dateDepotDossier": "2024-11-15",
+    "traitements": [
+      {
+        "codeBarre": "6118000120155",
+        "existe": true,
+        "nomMedicament": "ZADRYL",
+        "typeMedicament": "Solution Buvable",
+        "prixMedicament": 31.90
+      },
+      {
+        "codeBarre": "6118000241256",
+        "existe": true,
+        "nomMedicament": "MYNAZOL",
+        "typeMedicament": "Gélule",
+        "prixMedicament": 87.00
+      }
+    ]
+  },
+  {
+    "nomAssure": "Samira",
+    "numeroAffiliation": "AFF567890",
+    "immatriculation": "IMM890123",
+    "lienParente": "épouse",
+    "montantTotalFrais": 280.0,
+    "prixConsultation": 75.0,
+    "nombrePiecesJointes": 3,
+    "nomBeneficiaire": "Mounir",
+    "dateDepotDossier": "2024-11-16",
+    "traitements": [
+      {
+        "codeBarre": "6118000091974",
+        "existe": true,
+        "nomMedicament": "ALFACEFAL 125 MG/5 ML",
+        "typeMedicament": "Poudre pour Suspension Buvable",
+        "prixMedicament": 45.00
+      }
+    ]
+  },
+  {
+    "nomAssure": "Amina",
+    "numeroAffiliation": "AFF678901",
+    "immatriculation": "IMM901234",
+    "lienParente": "mère",
+    "montantTotalFrais": 350.0,
+    "prixConsultation": 100.0,
+    "nombrePiecesJointes": 6,
+    "nomBeneficiaire": "Imane",
+    "dateDepotDossier": "2024-11-17",
+    "traitements": [
+      {
+        "codeBarre": "6118001182459",
+        "existe": true,
+        "nomMedicament": "VIVALAN",
+        "typeMedicament": "Comprimé Pellicule",
+        "prixMedicament": 60.70
+      },
+      {
+        "codeBarre": "6118000241256",
+        "existe": true,
+        "nomMedicament": "MYNAZOL",
+        "typeMedicament": "Gélule",
+        "prixMedicament": 87.00
+      }
+    ]
+  },
+  {
+    "nomAssure": "Omar",
+    "numeroAffiliation": "AFF789012",
+    "immatriculation": "IMM012345",
+    "lienParente": "fils",
+    "montantTotalFrais": 160.0,
+    "prixConsultation": 50.0,
+    "nombrePiecesJointes": 3,
+    "nomBeneficiaire": "Mounir",
+    "dateDepotDossier": "2024-11-18",
+    "traitements": [
+      {
+        "codeBarre": "6118000100270",
+        "existe": true,
+        "nomMedicament": "MEDIATOR",
+        "typeMedicament": "Comprimé Enrobé",
+        "prixMedicament": 60.00
+      }
+    ]
+  },
+  {
+    "nomAssure": "Nadia",
+    "numeroAffiliation": "AFF890123",
+    "immatriculation": "IMM345678",
+    "lienParente": "soeur",
+    "montantTotalFrais": 190.0,
+    "prixConsultation": 65.0,
+    "nombrePiecesJointes": 4,
+    "nomBeneficiaire": "Yassine",
+    "dateDepotDossier": "2024-11-19",
+    "traitements": [
+      {
+        "codeBarre": "6118000041344",
+        "existe": true,
+        "nomMedicament": "NOCAND 50 MG",
+        "typeMedicament": "Gélule",
+        "prixMedicament": 35.00
+      },
+      {
+        "codeBarre": "6118001182459",
+        "existe": true,
+        "nomMedicament": "VIVALAN",
+        "typeMedicament": "Comprimé Pellicule",
+        "prixMedicament": 60.70
+      }
+    ]
+  }
+]
